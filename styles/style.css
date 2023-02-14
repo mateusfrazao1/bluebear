@@ -1,0 +1,39 @@
+/*definindo cores do projeto */
+:root {
+    --cor-texto: #264154;
+    --cor-boxlogo: #ebe2e2;
+    --cor-fundo: #d9d9d9;
+    --cor-btn: #264154;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    width: 30%;
+    height: 80%;
+}
+
+.header-topo .logo {
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    font-size: 7px;
+}
+
+.header-topo .img-principal {
+    width: 300px;
+}
