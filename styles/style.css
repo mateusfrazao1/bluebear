@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,700;1,600&family=Lato&family=Oswald:wght@500&family=Roboto+Mono:wght@100;300&family=Unbounded:wght@200;700&display=swap");
+
 /*definindo cores do projeto */
 :root {
     --cor-texto: #264154;
@@ -6,34 +13,77 @@
     --cor-btn: #264154;
 }
 
-.principal {
+body {
+    margin: 0;
+    padding: 40px;
+    background: var(--cor-fundo);
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
+    gap: 20px;
+}
+
+.principal {
+    background: white;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    border: none;
+    border-radius: 30px;
 }
 
-.header-topo {
+.principal .header-topo {
+    background: var(--cor-boxlogo);
+    width: 20%;
+    height: 850px;
+    border-right: none;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: space-around;
-    width: 30%;
-    height: 80%;
+    justify-content: space-between;
+    gap: 75px;
 }
 
-.header-topo .logo {
+.logo,
+.img-principal {
+    width: 90%;
+    padding-top: 12px;
 }
 
-h1 {
-    display: inline-block;
-    text-align: center;
-    width: 200px;
-    font-size: 7px;
+.logo .img-logo {
+    width: 100%;
 }
 
-.header-topo .img-principal {
-    width: 300px;
+.img-principal .img-urso {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 20px;
+}
+
+article form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    gap: 30px;
+}
+
+form label {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: var(--cor-texto);
+    font-family: "Kanit", sans-serif;
+}
+
+form input {
+    width: 400px;
+    height: 40px;
+    background: var(--cor-fundo);
+    border-radius: 5px;
+    border: none;
 }
